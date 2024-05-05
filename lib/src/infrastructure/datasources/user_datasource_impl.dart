@@ -5,13 +5,13 @@ import '../services/email_service.dart';
 import '../services/notification_handler.dart';
 import '../services/notification_service.dart';
 
-
+/// Class for User datasource implementation
 class UserDatasourceImpl extends UserDatasource {
 
   EmailService emailService = EmailService();
   NotificationService notificationService = NotificationService();
 
-
+/// Initialization of users list
    List<User> users = [];
 
    @override

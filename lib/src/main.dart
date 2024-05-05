@@ -17,7 +17,7 @@ void main() {
   var userService = UserDatasourceImpl();
   var emailService = EmailService();
 
-  // Create user
+  /// Create user
   var newUser = User(
     id: 1,
     name: 'Salomon',
@@ -31,11 +31,11 @@ void main() {
   print('Primer usuario registrado!');
   userService.createUser(newUser, emailService);
 
-  // List users
+  /// List users
   print('\nLista de usuarios del sistema:');
   print(userService.listUsers().toString());
 
-  // Update users
+  /// Update users
   var updatedUser = User(
     id: 1,
     name: 'Salomon Updated',
@@ -50,7 +50,7 @@ void main() {
   print('\nLista de usuarios del sistema después de la actualización:');
   print(userService.listUsers().toString());
 
-  // Delete users
+  /// Delete users
   var userIdToDelete = 1;
   userService.deleteUser(userIdToDelete);
 
@@ -90,17 +90,17 @@ void main() {
     updatedAt: DateTime.now(),
   );
 
-  // Add products
+  /// Add products
   productDatasource.addProduct(product1);
   productDatasource.addProduct(product2);
 
-  // List products
+  /// List products
   print("Lista de productos:");
   productDatasource.listProducts().forEach((product) {
     print("ID: ${product.id}, SKU: ${product.sku}, Name: ${product.name}, Price: ${product.price}");
   });
 
-  // Edit product
+  /// Edit product
   var newProduct2 = Product(
     id: "2",
     name: "Product Two",
@@ -119,7 +119,7 @@ void main() {
   print("\nProducto editado:");
   print(productDatasource.getProductBySku("SKU002"));
 
-  // Delete product
+  /// Delete product
   productDatasource.deleteProduct("SKU001");
   print("\nLista de productos después de eliminar uno:");
   productDatasource.listProducts().forEach((product) {

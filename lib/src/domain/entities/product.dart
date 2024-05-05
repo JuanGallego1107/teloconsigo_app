@@ -1,6 +1,7 @@
 
 import 'enums/category.dart';
 
+/// Product Model
 class Product {
 
   String id;

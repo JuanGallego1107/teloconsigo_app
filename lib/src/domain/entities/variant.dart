@@ -2,6 +2,7 @@
 
 import 'package:solid_app/src/domain/entities/product.dart';
 
+/// Variant Model that extends Product
 class Variant extends Product {
   String variantId;
   String variantSku;

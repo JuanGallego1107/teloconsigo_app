@@ -3,8 +3,10 @@ import 'package:solid_app/src/domain/datasources/product_datasource.dart';
 import 'package:solid_app/src/domain/entities/product.dart';
 import 'package:solid_app/src/domain/repositories/product_repository.dart';
 
+/// Class for Product repository implementation
 class ProductRepositoryImpl extends ProductRepository {
 
+  /// Initialization of Product datasource
   final ProductDatasource productDatasource;
 
   ProductRepositoryImpl(this.productDatasource);

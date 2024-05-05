@@ -1,3 +1,5 @@
+
+/// Category Enum Model
 enum Category {
   accesorioElectronico,
   accesorioDecorativo,

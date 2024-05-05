@@ -2,10 +2,12 @@ import 'package:solid_app/src/domain/datasources/product_datasource.dart';
 
 import '../../domain/entities/product.dart';
 
+/// Class for Product datasource implementation
 class ProductDatasourceImpl extends ProductDatasource{
 
   /// TODO: API LOGIC
 
+  /// Intilization of products list
   final List<Product> products = [];
 
   @override
@@ -13,13 +15,11 @@ class ProductDatasourceImpl extends ProductDatasource{
     return List<Product>.from(products);
   }
 
-  // Method to add a new product
   @override
   void addProduct(Product product) {
     products.add(product);
   }
 
-  // Method to edit an existing product
   @override
   void editProduct(String sku, Product newProduct) {
     int index = products.indexWhere((product) => product.sku == sku);
@@ -30,13 +30,11 @@ class ProductDatasourceImpl extends ProductDatasource{
     }
   }
 
-  // Method to query a product by SKU
   @override
   Product? getProductBySku(String sku) {
     return products.firstWhere((product) => product.sku == sku);
   }
 
-  // Method to delete a product by SKU
   @override
   void deleteProduct(String sku) {
     products.removeWhere((product) => product.sku == sku);

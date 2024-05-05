@@ -5,10 +5,11 @@ import 'package:solid_app/src/domain/repositories/user_repository.dart';
 
 import '../services/notification_handler.dart';
 
+/// Class for User repository implementation
 class UserRepositoryImpl extends UserRepository {
 
+  /// Initialization of User datasource
   final UserDatasource userDatasource;
-
 
   UserRepositoryImpl(this.userDatasource);
 

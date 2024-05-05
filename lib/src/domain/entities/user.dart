@@ -1,5 +1,5 @@
 import 'enums/interest.dart';
-
+/// User model
 class User {
   int id;
   String name;
