@@ -1,0 +1,5 @@
+
+enum Interest {
+  ocasional,
+  mayorista,
+}
