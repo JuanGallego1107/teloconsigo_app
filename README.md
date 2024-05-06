@@ -1,3 +1,7 @@
+Diagrama de clases: ![DiagramaClases drawio](https://github.com/JuanGallego1107/teloconsigo_app/assets/118768557/267e08dd-8da3-4ae8-9f86-275e7ff36e16) 
+
+Diagramas de secuencia : ![DiagramasSecuencia](https://github.com/JuanGallego1107/teloconsigo_app/assets/118768557/04897f71-f91a-49a5-89c7-017ce8118452)
+
 <!-- 
 This README describes the package. If you publish this package to pub.dev,
 this README's contents appear on the landing page for your package.
